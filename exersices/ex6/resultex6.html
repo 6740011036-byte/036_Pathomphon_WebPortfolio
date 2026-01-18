@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+</head>
+<style>
+    .profile-image{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit:cover;
+        margin-bottom: 15px;
+    }
+    .profile-name{
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .profile-bio{
+        color: #666;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .profile-button{
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 300px;
+    margin: 50px auto; 
+    text-align: center;
+}
+.profile-button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+</style>
+<body>
+    <div class="profile-card">
+
+   
+    <img class="profile-image" src="https://i.postimg.cc/5N7QmwQJ/myprofile.jpg" alt="">
+    <h2 class="profile-name">Khet Pathomphon</h2>
+    <p class="profile-bio"> Develop| UI/UX Designer</p>
+    <button class="profile-button">View Profile</button>
+     </div>
+</body>
+</html>

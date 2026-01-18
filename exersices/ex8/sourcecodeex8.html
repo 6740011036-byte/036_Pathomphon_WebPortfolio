@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Source Code Ex4</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <style>
+        pre {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="bg-green-200 p-2">
+    <h1>Ex8 : CSS : Beginner : สร้างและจัดสไตล์การ์ดข้อมูล CSS</h1>
+
+    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Data Card Design&lt;/title&gt;
+    &lt;style&gt;
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        .data-card {
+            background-color: #ffffff;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card-image{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-content{
+            padding: 15px;
+        }
+        .card-title{
+            color: #333;
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        .card-description{
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .data-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    &lt;div class="data-card"&gt;
+        &lt;img class="card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WISu5WgFnzxvEHkdNbvKtz98bF8ayQyijQ&amp;s" alt="Card Header"&gt;
+        &lt;div class="card-content"&gt;
+            &lt;h2 class="card-title"&gt;Card Title&lt;/h2&gt;
+            &lt;p class="card-description"&gt;Card Description: This is a description of the data card. It example card for education.
+
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+</body>
+</html>
